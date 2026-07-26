@@ -1,16 +1,16 @@
 from aiogram import F, Router
 from aiogram.filters import CommandStart
 from aiogram.types import Message, CallbackQuery
-from aiogram.fsm.state import StatesGroup, State
-from aiogram.fsm.context import FSMContext
 import app.keyboards as kb
 import aiosqlite
 import aiohttp
 import time
 import json
 
+from config import BASE_URL
+
 router = Router()
-base_url = 'https://v6.exchangerate-api.com/v6/fcb0ea833aa4202bdb468701/latest'
+base_url = BASE_URL
 
 @router.message(F.successful_payment)
 async def makeUserSubscribe(message : Message):

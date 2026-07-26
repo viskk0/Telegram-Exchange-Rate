@@ -9,7 +9,7 @@ from os import path
 import logging
 import asyncio
 
-session = AiohttpSession(proxy=PROXY_CONTROL)
+session = AiohttpSession(proxy=PROXY_CONTROL or None)
 
 bot = Bot(token=TOKEN, session=session)
 dp = Dispatcher()

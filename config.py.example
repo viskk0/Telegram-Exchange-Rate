@@ -1,2 +1,3 @@
 BOT_TOKEN = "ВАШ_ТОКЕН_ЗДЕСЬ"
-PROXY_URL = "http://user:pass@ip:port"
+PROXY_URL = "http://user:pass@ip:port" или "" если прокси не нужен!
+BASE_URL = "https://v6.exchangerate-api.com/v6/ВАШ_ТОКЕН_ЗДЕСЬ/latest"
