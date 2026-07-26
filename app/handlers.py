@@ -115,7 +115,7 @@ async def getRUB(message : Message):
         if sub_status == False:
             await message.answer(f"Курс 🪙100 RUB (без подписки🙁): \n💲{rub_to_usd:.2f} USD\n💶{rub_to_eur:.2f} EUR\n ₸{rub_to_kzt:.2f} KZT")
         else:
-            await message.answer(f"Курс 🪙100 RUB (c подпиской): \n💲{rub_to_usd:.2f} USD\n💶{rub_to_eur:.2f} EUR\n ₸{rub_to_kzt:.2f} KZT\n💴{rub_to_jpy:.2f} JPY\n💷{rub_to_cny:.2f} CNY")
+            await message.answer(f"Курс 🪙100 RUB (c подпиской🫰): \n💲{rub_to_usd:.2f} USD\n💶{rub_to_eur:.2f} EUR\n ₸{rub_to_kzt:.2f} KZT\n💴{rub_to_jpy:.2f} JPY\n💷{rub_to_cny:.2f} CNY")
 
 @router.message(F.text == "₸Получить курс тенге!")
 async def getKZT(message : Message):
